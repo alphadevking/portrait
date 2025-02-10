@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Preview Editor</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="editor-container">
+    <h2>HTML Editor</h2>
+    <textarea id="html-editor">
+<div class="container">
+  <img src="https://source.unsplash.com/600x800/?portrait" alt="Portrait">
+  <div class="overlay">
+    <h1>Hello, World!</h1>
+  </div>
+</div>
+    </textarea>
+
+    <h2>CSS Editor</h2>
+    <textarea id="css-editor">
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+    </textarea>
+
+    <h2>JavaScript Editor</h2>
+    <textarea id="js-editor">
+// JavaScript code here
+console.log("Hello from JS Editor");
+    </textarea>
+
+    <!-- Button to update the preview -->
+    <button id="update-btn">Update Preview</button>
+  </div>
+
+  <div class="preview-container">
+    <h2>Preview</h2>
+    <iframe id="preview-frame"></iframe>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
